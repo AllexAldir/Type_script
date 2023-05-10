@@ -1,7 +1,7 @@
-function say (){
-    console.log('hello')
+function say (x: string){
+    console.log(`${x}hello`)
 }
 
-say()
+say('nome')
 
 const test = 'nome'
