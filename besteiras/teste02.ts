@@ -39,4 +39,31 @@ class Aluno extends Pessoa {
 
 const ob_aluno = new Aluno('lucas', 12, 7);
 ob_aluno.idade = 89
-console.log(ob_aluno);
+//console.log(ob_aluno);
+
+
+/*-------------------------------------------*/
+
+class Carro {
+    constructor(
+        protected Marca: string = Marca,
+        protected Ano: number = Ano,
+        public Cor: string = Cor,
+        public Valor: number = Valor
+    ) { }
+
+    aumento_valor(x: number): void {
+        this.Valor = this.Valor + ((this.Valor * x) / 100)
+    }
+
+    desconto_valor(x: number): void {
+        this.Valor = this.Valor - ((this.Valor * x) / 100)
+    }
+
+
+}
+
+const carro1 = new Carro('Fiat', 2010, 'preto',80000)
+carro1.aumento_valor(10)
+console.log(carro1);
+
