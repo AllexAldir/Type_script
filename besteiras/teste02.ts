@@ -20,4 +20,23 @@ class Pessoa {
 
 const ob = new Pessoa('lucas', 45);
 
-console.log(ob)
+//console.log(ob)
+
+class Aluno extends Pessoa {
+    Turma: number
+    constructor(
+        nome: string,
+        _idade: number,
+        turma: number
+    ) {
+        super(nome, _idade);
+        this.Turma = turma
+
+    }
+
+
+}
+
+const ob_aluno = new Aluno('lucas', 12, 7);
+ob_aluno.idade = 89
+console.log(ob_aluno);
