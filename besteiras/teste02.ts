@@ -63,7 +63,19 @@ class Carro {
 
 }
 
-const carro1 = new Carro('Fiat', 2010, 'preto',80000)
+const carro1 = new Carro('Fiat', 2010, 'preto', 80000)
 carro1.aumento_valor(10)
-console.log(carro1);
+//console.log(carro1);
 
+/*--------------------------------------------*/
+
+class Moto extends Carro {
+    constructor(Marca: string, Ano: number, Cor: string, Valor: number) {
+        super(Marca, Ano, Cor, Valor)
+    }
+    
+}
+
+const moto1 = new Moto('Honda', 2019, 'Vermelha', 13000)
+
+console.log(moto1); 
