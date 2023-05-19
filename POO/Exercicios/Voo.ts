@@ -1,29 +1,3 @@
-export class Alunos_ADS {
-    constructor(protected Matricula: number, public Nome: string, readonly Nota1: number, readonly Nota2: number, readonly Nota_Trabalho: number) { }
-
-
-    MediaAluno(): number | string {
-        let pesoProva = 2.5
-        let pesoTrabalho = 2
-
-        const Media = ((this.Nota1 * pesoProva) + (this.Nota2 * pesoProva) + (this.Nota_Trabalho * pesoTrabalho)) / (pesoProva + pesoTrabalho)
-
-        if (Media < 7) {
-            return `Recuperação final... Você precisará de: ${Math.round(((7 - Media) * 100) / 100)} para passar no teste`
-        }
-
-        return Math.round(Media * 10) / 10
-
-    }
-
-}
-
-const aluno1 = new Alunos_ADS(1211212, 'Vinicius', 5, 5, 0)
-
-//console.log(aluno1);
-
-// Escreva uma classe Data cuja instância (objeto) represente uma data.
-
 export class Data {
     Data: any
     constructor(Data: any) { this.Data = Data }
@@ -133,9 +107,20 @@ export class Voo {
         return this.Data
     }
 
-    
+    setAssento(x: number): void {
+        let num = x - 1
+        const assentos = Object.entries(this.obVagas())
+
+        if (assentos[num][1] === true) return console.log('O lugar está ocupado!')
+
+        assentos[x][1] = true
+        console.log(`Lugar preenchido ${assentos[x][1]}`)
+    }
+
+
 }
 
 const Voo1 = new Voo(1111, d1)
 
-console.log(Voo1.getVoo())
+Voo1.setAssento(3)
+Voo1.setAssento(3)
