@@ -38,4 +38,4 @@ export class Aluno {
 
 const AL1 = new Aluno('Lucas', 25, '2345678')
 AL1.CPF = '6767677676'
-console.log(AL1.CPF)
+console.log(AL1.CPF)    
