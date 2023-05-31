@@ -1,1 +1,1 @@
-# Type_script
+# Estudos e aprimorando conhecimento em typescript
