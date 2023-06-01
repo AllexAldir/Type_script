@@ -1,1 +1,1 @@
-# Estudos e aprimorando conhecimento em typescript
+# Estudos e aprimorando conhecimento em typescript.
