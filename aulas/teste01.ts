@@ -1,4 +1,4 @@
-function say (x: string){
+export function say (x: string){
     console.log(`${x}hello`)
 }
 

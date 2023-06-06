@@ -31,7 +31,7 @@ let ob1: { nome: Pessoa, idade: Pessoa, teste?: Pessoa } = {
 
 /*Tipos de Funções*/
 
-function teste(x: number, y: number) {
+export function teste(x: number, y: number) {
     return x * y
 }
 

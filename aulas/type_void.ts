@@ -11,7 +11,7 @@ const pessoa = {
 
 pessoa.sayname()
 
-function teste(...x: string[]): void {
+export function teste(...x: string[]): void {
     console.log(x)
 }
 

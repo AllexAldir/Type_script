@@ -11,5 +11,11 @@
   },
   "dependencies": {
     "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts"
+  },
+  "rules": {
+    "no-console": 2
   }
 }

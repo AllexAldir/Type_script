@@ -1,6 +1,6 @@
 //Utilizando o tipo any
 
-function say(msg: any) {
+export function say(msg: any) {
     return console.log(msg);
 }
 
